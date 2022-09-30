@@ -1,0 +1,94 @@
+section {
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px 100px;
+    column-gap: 5px;
+    row-gap: 5px;
+    display: grid;
+    grid-template-areas: 
+    "green green green"
+    "yellow red blue"
+    "yelow red blue"
+    "orange orange blue";
+}
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black; 
+}
+#green {
+grid-area: green;
+background-color: green;
+}
+#yellow {
+grid-area: yellow;
+background-color: yellow;
+position: relative;
+display: grid;
+grid-template-columns: 2, 1fr;
+grid-template-rows: 50px 50px;
+gap: 4ch;
+justify-content: center;
+align-items: center;
+grid-template-areas: 
+"one two"
+"three four";
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+article {
+border: 1px solid black;
+width: 50px;
+height: 50px;
+background-color: white;
+margin-top: 2ch;
+margin-bottom: 2ch;
+}
+#red {
+grid-area: red;
+background-color: red;
+display: grid;
+grid-template-columns: 2, 1fr;
+grid-template-rows: 50px 50px;
+gap: 4ch;
+justify-content: center;
+align-items: center;
+grid-template-areas: 
+"alpha beta"
+"carefree dauntless";
+}
+.alpha {
+    grid-area: alpha;
+}
+.beta {
+    grid-area: beta;
+}
+.carefree {
+    grid-area: carefree;
+}
+.dauntless {
+    grid-area: dauntless;
+}
+#blue {
+grid-area: blue;
+background-color: blue;
+}
+#orange {
+grid-area: orange;
+background-color: orange;
+}
